@@ -97,6 +97,7 @@ int calculateTotalSize(folder* D){
 	int size = 0;
 	while(head != NULL){
 		size += head->size;
+		head = head->next;
 	}
 	return size;
 }
